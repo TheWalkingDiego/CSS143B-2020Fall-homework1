@@ -8,6 +8,17 @@ public class Problem1Test {
     // DO NOT CHANGE
     @Test
     public void testBinarySearch() {
+       int[] test1 = {1,2,3,4,5};
+       int target1 = 3;
+       int targetNotInArray = 100;
+
+       Problem1 object = new Problem1();
+       System.out.println(object.binarySearch(test1,targetNotInArray));
+       System.out.println("Target " + target1 + " was found in index "+
+               object.binarySearch(test1,target1)); //Should return 2
+
+
+
         int inputs[][] = {
                 {},
                 {3},
